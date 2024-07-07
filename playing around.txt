@@ -1,0 +1,13 @@
+player enters A1
+
+take A1, find piece object at A1
+
+return object
+
+use object to get name
+
+piece = input("A1")
+
+def getPieceName(piece, rows):
+	if piece[1] == "1":
+		return rows[0][ord(piece[0]) - 65].getName()
